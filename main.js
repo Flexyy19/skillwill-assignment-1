@@ -15,7 +15,7 @@ const convertTemp = function (temp) {
 
 // 3)
 const calculator = function (a, b, operation) {
-  if (typeof a !== "number" && typeof b !== "number") return false;
+  if (typeof a !== "number" || typeof b !== "number") return false;
 
   if (operation === "+") {
     return a + b;
